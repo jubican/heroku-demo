@@ -1,0 +1,119 @@
+* {
+    font-family: 'fira sans';
+}
+
+html, body { 
+    margin: 0; 
+    padding: 0;
+    background-color: #333333;
+}
+
+div.header {
+    height: 200px;
+    width:100%;
+    margin: 0;
+    padding:10px;
+    color:#232F3E;
+    position: relative;
+    background: -moz-linear-gradient(top,  #feb91a 0%, #fcac2b 50%, #f98f1a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #feb91a 0%,#fcac2b 50%,#f98f1a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #feb91a 0%,#fcac2b 50%,#f98f1a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb91a', endColorstr='#f98f1a',GradientType=0 ); /* IE6-9 */
+}
+
+div.header div.heading {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48pt;
+    font-weight: normal;
+}
+
+div.main_body {
+    margin: 0;
+    padding: 30px;
+}
+
+div.main_body div.body_content {
+    font-size:16pt;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    margin:0;
+    background-color: #bfbfbf;
+}
+
+div.table {
+    
+}
+
+div.table div.table_header {
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font-size: 20pt;
+    margin:0;
+    padding:5px;
+    height: auto;
+}
+
+div.table div.table_header div.table_cell {
+    float: left;
+    height: auto;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+div.table div.table_header div.table_cell_end {
+    clear: both;
+}
+
+div.table div.table_row {
+    margin:0;
+    padding:5px;
+    clear: both;
+    height: auto;
+}
+
+div.table div.table_row:nth-child(odd) {
+    background-color: #afafaf;
+}
+
+div.table div.table_row div.table_cell {
+    float: left;
+    height: auto;
+    overflow: hidden;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+div.table div.table_row div.table_cell_end {
+    clear: both;
+}
+
+.company_field {
+    width: 300px;
+}
+
+.customer_field {
+    width: 300px;
+}
+
+.counter_field {
+    width: 200px;
+}
+
+.action_field {
+    width: 200px;
+}
+
+.action_button {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    padding:5px 20px 5px 20px;
+    background-color: #8460AA;
+    color:white;
+    font-weight: bold;
+    font-size:12pt;
+    cursor: pointer;
+}
