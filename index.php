@@ -21,7 +21,7 @@
 <?php
 $db = pg_connect("host=ec2-54-163-230-219.compute-1.amazonaws.com port=5432 dbname=d4qutjb0l5o7tq user=rycnwatsutqwyy password=908a4fa5727438207db3a33386a26b0b40f0d0504b5c34bb256f8d6885141acd");
 
-$rs = pg_query($db, "select sfid, name, coalesce(counter__c, 0), coalesce(description, "[Not provided]") from salesforce.account order by name");
+$rs = pg_query($db, "select sfid, name, coalesce(counter__c, 0), coalesce(description, '[Not provided]') from salesforce.account order by name");
 while ($row = pg_fetch_row($rs)) {
     ?>
                 <div class="table_row">
