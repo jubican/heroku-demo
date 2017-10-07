@@ -100,6 +100,7 @@ div.table div.table_row div.table_cell_end {
 
 .counter_field {
     width: 200px;
+    text-align: center;
 }
 
 .action_field {
