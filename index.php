@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="assets/js/MooTools-Core-1.6.0.js"></script>
-<script type="text/javascript">
-function runme(id) {
-    new Request({
-        url: 'https://1fvuwyy8rf.execute-api.us-east-1.amazonaws.com/prod/?affiliateid='+id+'&email_address=kevin@amazonapp.cloud&page=events',
-        method: 'post',
-        onSuccess: function(response) {
-            location.reload();
-        }
-    }).send();
-}
-</script>
+    <script type="text/javascript" src="assets/js/MooTools-Core-1.6.0.js"></script>
+    <script type="text/javascript">
+    function runme(id) {
+        new Request({
+            url: 'https://1fvuwyy8rf.execute-api.us-east-1.amazonaws.com/prod/service/?affiliateid='+id+'&email_address=kevin@amazonapp.cloud&page=events',
+            method: 'post',
+            headers: '',
+            onSuccess: function(response) {
+                location.reload();
+            }
+        }).send();
+    }
+    </script>
 <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 <link rel="stylesheet" type="text/css" href="assets/fonts/stylesheet.css" />
 </head>
