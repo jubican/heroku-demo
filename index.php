@@ -23,7 +23,7 @@
                     <div class="table_cell_end"></div>
                 </div>
 <?php
-$db = pg_connect("host=ec2-54-163-230-219.compute-1.amazonaws.com port=5432 dbname=d4qutjb0l5o7tq user=rycnwatsutqwyy password=908a4fa5727438207db3a33386a26b0b40f0d0504b5c34bb256f8d6885141acd");
+$db = pg_connect("host=ec2-23-21-197-231.compute-1.amazonaws.com port=5432 dbname=d625bv72i84t79 user=qyqvidauyxedhv password=b40c99ea9013c7131ac1b2f1a104359fdbf81a1bb9c98e286131792b5d865440");
 
 $rs = pg_query($db, "select sfid, name, coalesce(counter__c, 0), coalesce(description, '&nbsp;') from salesforce.account order by name");
 while ($row = pg_fetch_row($rs)) {
