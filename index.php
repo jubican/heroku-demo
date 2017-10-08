@@ -6,8 +6,7 @@
     function runme(id) {
         new Request({
             url: 'https://1fvuwyy8rf.execute-api.us-east-1.amazonaws.com/prod/?affiliateid='+id+'&email_address=kevin@amazonapp.cloud&page=events',
-            method: 'post',
-            headers: '',
+            method: 'get',
             onSuccess: function(response) {
                 location.reload();
             }
