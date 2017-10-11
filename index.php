@@ -35,7 +35,7 @@
                     <div class="table_cell_end"></div>
                 </div>
 <?php
-//postgres://:@:5432/
+// 
 
 $db = pg_connect("host=ec2-107-22-160-199.compute-1.amazonaws.com port=5432 dbname=df4c9b1nhpkqp user=wmyxkghojelbei password=ce6c0c139ff9e3830a8ca719778531243d7e26fa929781d0a97272c38d025f1b");
 
