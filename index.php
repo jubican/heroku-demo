@@ -35,9 +35,8 @@
                     <div class="table_cell_end"></div>
                 </div>
 <?php
-// postgres://:@:5432/
 
-$db = pg_connect("host=ec2-50-16-250-215.compute-1.amazonaws.com port=5432 dbname=ddm9icjbhv802a user=atibwezesbkzal password=17478e49efabebbb3b16bdabfec8c2f110b182ce91ab32e95e43807a639648c6");
+$db = pg_connect("host=ec2-54-243-47-252.compute-1.amazonaws.com port=5432 dbname=da0thfl5bgjkvo user=byuluzbbpuudzl password=6390576ca36347fb2f7e436e27544ce864ed7db5285c0dd3a9cb4cac2cdc2c3a");
 
 $rs = pg_query($db, "select sfid, id, name, coalesce(counter__c, 0), coalesce(description, '&nbsp;') from salesforce.account order by name");
 while ($row = pg_fetch_row($rs)) {
