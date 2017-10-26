@@ -5,7 +5,7 @@
     <script type="text/javascript">
     function runme(id) {
         new Request({
-            url: 'https://uqwmxvrftb.execute-api.us-east-1.amazonaws.com/prod/?affiliateid='+id+'&email_address=kevin@amazonapp.cloud&page=events',
+            url: 'https://y0l4auul74.execute-api.us-east-1.amazonaws.com/prod/?affiliateid='+id+'&email_address=kevin@amazonapp.cloud&page=events',
             method: 'get',
             onSuccess: function(response) {
                 location.reload();
