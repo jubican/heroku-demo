@@ -46,7 +46,7 @@ while ($row = pg_fetch_row($rs)) {
                     <div class="table_cell customer_field"><?php echo $row[4] ?></div>
                     <div class="table_cell counter_field"><?php echo $row[3] ?></div>
                     <div class="table_cell action_field">
-                        <button class="action_button" onclick="runme(<?php echo $row[1] ?>);">Subscribe</button>
+                        <button class="action_button" onclick="runme(<?php echo $row[1] ?>);">Click Me!</button>
                     </div>
                     <div class="table_cell_end"></div>
                 </div>
